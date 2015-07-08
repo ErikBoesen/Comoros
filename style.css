@@ -87,11 +87,18 @@ video {
     vertical-align: baseline;
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTT0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
 .landing {
     height: 100vh;
     color: white;
     font-family: "Ubuntu";
-    background-image: url("images/comorosbg.jpg");
     text-align: center;
 }
 
@@ -112,79 +119,38 @@ video {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.landing div:first-child {
-    z-index: 200;
-    position: fixed;
-    background-color: transparent;
-    height: 0;
-    width: 0;
-    transition: .5s all;
-    transition-delay: .2s;
-    background-color: white;
+article {
+    font-family: "Open Sans";
 }
 
-.landing div:first-child:hover {
-    width: 20vw;
-    height: 100vh;
-    transition: .5s all;
-    z-index: 200;
+section h2 {
+    font-size: 8em;
+    padding: 20vh 0 0 20vw;
 }
 
-a {
+section p {
+    font-size: 2em;
+    padding: 0 0 0 10vw;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Ubuntu", "Open Sans", sans-serif;
+}
+
+.button {
+    text-align: center;
+    border: 1px solid black;
     color: black;
-    text-decoration: none;
-    transition: .2s;
+    transition: .5s ease;
+    margin: 0 0 0 42vw;
+    padding: 7px;
     font-size: 1.5em;
+    border-radius: 2px;
+    text-decoration: none;
 }
 
-a:first-child {
-    padding-top: 30vh;
-}
-
-a h2 {
-    color: rgb(48, 48, 48);
-    transition: .5s;
-    margin: 0 20px 0 30px;
-    padding: 0 0 50px 0;
-}
-
-a h2::selection {
-    background-color: transparent;
-    color: blue;
-}
-
-a:last-child {
-    color: rgb(49, 49, 49);
-}
-
-a h2:before {
-    content: "|";
-}
-
-a h2:after {
-    content: "|";
-}
-
-a h2:hover {
-    color: #333;
-}
-
-.landing div:first-child a {
-    height: 40px;
-}
-
-.landing div:first-child p:before {
-    content: "☰";
-    z-index: 500;
-    font-size: 3em;
+.button:hover {
     color: white;
-    width: 50px;
-    cursor: pointer;
-    transition: .5s;
-}
-
-.landing div:first-child p:before:hover {
-    content: "X";
-    color: black;
-    z-index: 500;
+    background-color: black;
 }
