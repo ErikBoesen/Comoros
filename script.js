@@ -13,7 +13,7 @@ var menu = function() {
             }, 200);
             $(".menu-cover").animate({
                 bottom: "0"
-            }, 200);
+            }, 150);
 
             isMenuOpen = true;
         }
@@ -27,7 +27,7 @@ var menu = function() {
             }, 200);
             $(".menu-cover").animate({
                 bottom: "100vh"
-            }, 200);
+            }, 150);
 
             isMenuOpen = false;
         }

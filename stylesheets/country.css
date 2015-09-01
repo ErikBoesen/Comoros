@@ -1,0 +1,12 @@
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.column-group {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    width: 20vw;
+}
