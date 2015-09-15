@@ -1,11 +1,9 @@
-/* jshint jquery: true, browser: true */
-
 var menu = function() {
     var isMenuOpen = false;
     $(".menu-button").click(function() {
         if (isMenuOpen === false) {
-            $(".menu").stop();
-            $(".menu").animate({
+            $("nav").stop();
+            $("nav").animate({
                 left: "6vw"
             }, 200);
             $(".menu-button").animate({
@@ -18,8 +16,8 @@ var menu = function() {
             isMenuOpen = true;
         }
         else {
-            $(".menu").stop();
-            $(".menu").animate({
+            $("nav").stop();
+            $("nav").animate({
                 left: "100vw"
             }, 200);
             $(".menu-button").animate({
